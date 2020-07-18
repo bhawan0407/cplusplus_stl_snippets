@@ -25,5 +25,8 @@ stacks: stacks.o
 queues: queues.o
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
+priority_queues: priority_queues.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
 clean:
 	rm *.o
