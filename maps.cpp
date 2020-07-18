@@ -4,7 +4,8 @@
 
 using namespace std;
 
-void print(const map<int, string>& mp)
+template<typename T>
+void print(const T& mp)
 {
 	cout << "Contents of map: { ";
 
@@ -15,43 +16,6 @@ void print(const map<int, string>& mp)
 
 	cout << "}" << endl;
 }
-
-void print(const multimap<int, string>& mp)
-{
-	cout << "Contents of multi map: { ";
-
-	for(auto& it: mp)
-	{
-		cout << it.first << " -> "  << it.second << " ";
-	}
-
-	cout << "}" << endl;
-}
-
-void print(const unordered_map<int, string>& mp)
-{
-	cout << "Contents of unordered map: { ";
-
-	for(auto& it: mp)
-	{
-		cout << it.first << " -> "  << it.second << " ";
-	}
-
-	cout << "}" << endl;
-}
-
-void print(const unordered_multimap<int, string>& mp)
-{
-	cout << "Contents of unordered multi map: { ";
-
-	for(auto& it: mp)
-	{
-		cout << it.first << " -> "  << it.second << " ";
-	}
-
-	cout << "}" << endl;
-}
-
 
 int main()
 {

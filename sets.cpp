@@ -4,45 +4,10 @@
 
 using namespace std;
 
-void print(const set<int>& st)
+template<typename T>
+void print(const T& st)
 {
 	cout << "Contents of set: { ";
-
-	for(const int& num: st)
-	{
-		cout << num << " ";
-	}
-
-	cout << "}" << endl;
-}
-
-void print(const multiset<int>& st)
-{
-	cout << "Contents of  multi set: { ";
-
-	for(const int& num: st)
-	{
-		cout << num << " ";
-	}
-
-	cout << "}" << endl;
-}
-
-void print(const unordered_set<int>& st)
-{
-	cout << "Contents of unordered set: { ";
-
-	for(const int& num: st)
-	{
-		cout << num << " ";
-	}
-
-	cout << "}" << endl;
-}
-
-void print(const unordered_multiset<int>& st)
-{
-	cout << "Contents of unordered multi set: { ";
 
 	for(const int& num: st)
 	{
