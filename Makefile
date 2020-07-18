@@ -1,0 +1,23 @@
+CXX = g++ --std=c++11
+CXXFLAGS = -Wall -Werror
+
+# $< represents dependency
+# $@ represents target
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $<
+
+templates: templates.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+lists: lists.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+vectors: vectors.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+deques: deques.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+clean:
+	rm *.o
