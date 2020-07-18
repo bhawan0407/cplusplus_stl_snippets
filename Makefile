@@ -31,5 +31,8 @@ priority_queues: priority_queues.o
 sets: sets.o
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
+maps: maps.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
 clean:
-	rm *.o
+	rm *.
