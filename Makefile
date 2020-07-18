@@ -19,5 +19,11 @@ vectors: vectors.o
 deques: deques.o
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
+stacks: stacks.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
+queues: queues.o
+	$(CXX) $(CXXFLAGS) -o $@ $<
+
 clean:
 	rm *.o
